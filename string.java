@@ -7,6 +7,6 @@ public class Main
 	    String last ="Raj";
 	    String name=text+blank+last;
 		System.out.println(name);   //one way
-		System.out.println("govind"+" " +"Raj"); 
+		System.out.println("govind"+" " +"Raj");  //other way
 	}
 }
