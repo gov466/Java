@@ -27,3 +27,29 @@ public class Main
 	}
 }
 O/P- Hello 0- Hello 4
+
+--------------------------------------
+	//if statement
+
+public class Main
+{
+	public static void main(String[] args) {
+	   int A=50, B=20, C=10;
+	   
+	    if((A>B) && (A>C))
+	    {
+	   System.out.println("A is greater");
+	  
+	    }
+	    else if(B>C)
+	    {
+	       System.out.println("B is greater");
+	    }
+	    else{
+	        System.out.println("C is greater");
+	    }
+	    
+	    
+	}
+}
+
