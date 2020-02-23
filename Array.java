@@ -1,3 +1,4 @@
+//WAP to use an array in java
 public class Main
 {
 	public static void main(String[] args) {
