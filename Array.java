@@ -4,21 +4,21 @@ public class Main
 	public static void main(String[] args) {
 	   int value=7;				//setting value as 7
 	   int[] values;
-	   values=new int[3];
+	   values=new int[3];	//setting value as array of size 3
 	   System.out.println(values[0]);	//printing value in 0th posistion(at present its value is  0)
 	   values[0]=10;
 	   values[1]=20;	//giving different values to 0,1,2 posistion
 	   values[2]=30;
-	   System.out.println(values[0]);
+	   System.out.println(values[0]);  //printing values
 	   System.out.println(values[1]);
 	   System.out.println(values[2]);
-	   for(int i=0;i<values.length;i++)
+	   for(int i=0;i<values.length;i++)	//printing values using for loop
 	   {
 	         System.out.println(values[i]);
 	       
 	   }
-	   int []numbers={5,6,7};
-	   for(int i=0;i<numbers.length;i++)
+	   int []numbers={5,6,7}; //creating new array numbers
+	   for(int i=0;i<numbers.length;i++)	//printing their values
 	   {
 	         System.out.println(numbers[i]);
 	   }
