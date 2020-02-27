@@ -35,9 +35,9 @@ public class App {
          
         int years = person1.calculateYearsToRetirement(); //calling a member function of class
          
-        System.out.println("Years till retirements " + years);
+        System.out.println("Years till retirements " + years); //years in above line  consists of value of yearrleft which is calculated in member function
          
-        int age = person1.getAge();
+        int age = person1.getAge(); //calling get age abd get name
         String name = person1.getName();
          
         System.out.println("Name is: " + name);
