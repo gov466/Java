@@ -26,14 +26,14 @@ class Person {
 public class App {
  
     public static void main(String[] args) {
-        Person person1 = new Person();
+        Person person1 = new Person();        //declare Object to call data in class  
          
-        person1.name = "Joe";
+        person1.name = "Joe";       // inputing name as joe
         person1.age = 25;
          
-        // person1.speak();
+        person1.speak();
          
-        int years = person1.calculateYearsToRetirement();
+        int years = person1.calculateYearsToRetirement(); //calling a member function of class
          
         System.out.println("Years till retirements " + years);
          
