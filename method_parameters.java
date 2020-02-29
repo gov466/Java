@@ -1,3 +1,4 @@
+//program defining method parameters in jaca
 class Frog {
     private String name;
     private int age;
