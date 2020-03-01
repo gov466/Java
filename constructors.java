@@ -1,3 +1,4 @@
+//java program based on constructors
 class Machine {
     private String name;
     private int code;
