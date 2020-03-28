@@ -18,7 +18,7 @@ public class HelloWorld{
          robot san = new robot();             //class variable
          san.speak("hi i am govind");   //passing parameter to class
          san.jump(7);           //passing parameter to method jump
-         san.move("West", 7.2); //
+         san.move("West", 7.2); // passing paramter to method move
         
      }
 }
