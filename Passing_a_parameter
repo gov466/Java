@@ -1,0 +1,15 @@
+class robot{                    //class named robot
+    public void speak(String text)        //method with paramter string
+    {
+       System.out.println(text);      //printing the text
+    }
+}
+public class HelloWorld{
+
+     public static void main(String []args){
+         robot san = new robot();             //class variable
+         san.speak("hi i am govind");   //passing parameter to class
+         
+        
+     }
+}
