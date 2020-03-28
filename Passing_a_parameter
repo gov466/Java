@@ -1,3 +1,5 @@
+//Program to pass paramters to method
+
 class robot{                    //class named robot
     public void speak(String text)        //method with paramter string
     {
