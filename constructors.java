@@ -3,7 +3,8 @@ class Machine {
     private String name;
     private int code;
      
-    public Machine() {
+    public Machine() { { //constructr is  spceaial methof that runs everytiemwhen you creatre and instace of your class
+//constryct r  no return type name sam eof class
         this("Arnie", 0);
          
         System.out.println("Constructor running!");
@@ -27,7 +28,7 @@ class Machine {
  
 public class App {
     public static void main(String[] args) {
-        Machine machine1 = new Machine();
+        Machine machine1 = new Machine(); //object creation
  
         Machine machine2 = new Machine("Bertie");
          
