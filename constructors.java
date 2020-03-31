@@ -5,6 +5,7 @@ class Machine {
      
     public Machine() { { //constructr is  spceaial methof that runs everytiemwhen you creatre and instace of your class
 //constryct r  no return type name sam eof class
+        //name= "Arnie"; 
         this("Arnie", 0);
          
         System.out.println("Constructor running!");
@@ -34,5 +35,13 @@ public class App {
          
         Machine machine3 = new Machine("Chalky", 7);
     }
+    
  
 }
+
+    
+NOTES:
+    The first machine1 will call first method when the control go insiude first method the "this"menthod will go to 
+        third method and third construction will output as 1st. and then the output of first method will go as output.
+        Then after that 2nf and 3rd mrthod will will be called and processed.
+    
