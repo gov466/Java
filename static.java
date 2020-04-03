@@ -3,7 +3,7 @@ class Thing {
     public final static int LUCKY_NUMBER = 7;
      
     public String name;                     //normal declaration
-    public static String description;
+    public static String description;       //static declaration which no need object inside main
      
     public static int count = 0;
      
