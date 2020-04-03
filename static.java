@@ -1,7 +1,8 @@
+//java program demonstrates static and final keyworkds in java
 class Thing {
     public final static int LUCKY_NUMBER = 7;
      
-    public String name;
+    public String name;                     //normal declaration
     public static String description;
      
     public static int count = 0;
