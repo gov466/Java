@@ -48,9 +48,10 @@ public class App {
         thing1.showName();  //printng gthe names
         thing2.showName();
          
-        System.out.println(Math.PI);    //
+        System.out.println(Math.PI);    //outputs 3.14 whic is a constabnt mathematical value for pi. 
          
-        System.out.println(Thing.LUCKY_NUMBER);
+        System.out.println(Thing.LUCKY_NUMBER); /*luckynumber is inside the class and it has value 7 and
+                                                this statement prints the value */
     }
  
 }
