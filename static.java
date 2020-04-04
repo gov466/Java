@@ -21,7 +21,7 @@ class Thing {
     }
      
     public static void showInfo() {
-        System.out.println(description);
+        System.out.println(description); 
         // Won't work: System.out.println(name);
     }
 }
@@ -31,9 +31,9 @@ public class App {
  
     public static void main(String[] args) {
          
-        Thing.description = "I am a thing";
+        Thing.description = "I am a thing"; //description is a static string so it can be accessed directly and given its value
          
-        Thing.showInfo();
+        Thing.showInfo();   //will call the showinfo method which is of type void that prints the description there itself
          
         System.out.println("Before creating objects, count is: " + Thing.count);
          
