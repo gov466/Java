@@ -35,12 +35,12 @@ public class App {
          
         Thing.showInfo();   //will call the showinfo method which is of type void that prints the description there itself
          
-        System.out.println("Before creating objects, count is: " + Thing.count);
+        System.out.println("Before creating objects, count is: " + Thing.count); //this statement tells the no of obejct created
          
-        Thing thing1 = new Thing();
+        Thing thing1 = new Thing(); //two objects being created
         Thing thing2 = new Thing();
          
-        System.out.println("After creating objects, count is: " + Thing.count);
+        System.out.println("After creating objects, count is: " + Thing.count); //count valjue after object creation
          
         thing1.name = "Bob";
         thing2.name = "Sue";
