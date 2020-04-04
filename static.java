@@ -9,7 +9,7 @@ class Thing {
      
     public int id;
      
-    public Thing() {
+    public Thing() { //constructor
          
         id = count;
          
@@ -42,13 +42,13 @@ public class App {
          
         System.out.println("After creating objects, count is: " + Thing.count); //count valjue after object creation
          
-        thing1.name = "Bob";
+        thing1.name = "Bob";    //giving name a value
         thing2.name = "Sue";
          
-        thing1.showName();
+        thing1.showName();  //printng gthe names
         thing2.showName();
          
-        System.out.println(Math.PI);
+        System.out.println(Math.PI);    //
          
         System.out.println(Thing.LUCKY_NUMBER);
     }
