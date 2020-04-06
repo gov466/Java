@@ -27,12 +27,12 @@ public class App {
         // The same as above, but nicer ....
         
         StringBuilder s = new StringBuilder();
-        
+            
         s.append("My name is Roger.")
         .append(" ")
-        .append("I am a skydiver.");
+        .append("I am a skydiver."); //putting semicolon last of the line by appending  
         
-        System.out.println(s.toString());
+        System.out.println(s.toString()); //printing the statement
         
         ///// Formatting //////////////////////////////////
         
