@@ -1,8 +1,9 @@
+//inheritaed class from machine
 public class Car extends Machine {
      
      
     @Override
-    public void start() {
+    public void start() {               //methods of child class
         System.out.println("Car started");
     }
  
@@ -11,6 +12,6 @@ public class Car extends Machine {
     }
      
     public void showInfo() {
-        System.out.println("Car name: " + name);
+        System.out.println("Car name: " + name); //printing the name defined in machine from here
     }
 }
