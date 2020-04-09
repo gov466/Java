@@ -1,9 +1,10 @@
+//Java program showing the inheritance feature
 public class App {
  
     public static void main(String[] args) {
-        Machine mach1 = new Machine();
+        Machine mach1 = new Machine();   //creating object for machine
          
-        mach1.start();
+        mach1.start();   
         mach1.stop();
          
         Car car1 = new Car();
