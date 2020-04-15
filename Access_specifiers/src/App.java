@@ -1,4 +1,4 @@
-import world.Plant;
+import world.Plant;   
  
 /*
  * private --- only within same class
@@ -13,9 +13,9 @@ public class App {
      * @param args
      */
     public static void main(String[] args) {
-        Plant plant = new Plant();
+        Plant plant = new Plant();       //plant object
          
-        System.out.println(plant.name);
+        System.out.println(plant.name); 
          
         System.out.println(plant.ID);
          
