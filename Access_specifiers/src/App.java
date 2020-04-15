@@ -1,4 +1,4 @@
-import world.Plant;   
+import world.Plant;    //world is another package and it consists plant class
  
 /*
  * private --- only within same class
