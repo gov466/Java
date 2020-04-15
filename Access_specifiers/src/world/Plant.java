@@ -1,4 +1,4 @@
-package world;
+package world; //separate package world
  
 class Something {
      
@@ -11,13 +11,13 @@ public class Plant {
     // Accepatable practice --- it's final.
     public final static int ID = 8;
      
-    private String type;
+    private String type; //access specifier private
      
     protected String size;
      
     int height;
      
-    public Plant() {
+    public Plant() {  //constructor
         this.name = "Freddy";
         this.type = "plant";
         this.size = "medium";
