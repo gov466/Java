@@ -5,7 +5,7 @@ public class car {
 	//variables declared isndie method is only used inside method
 	int Topspeed = 120;  //global variable //variable declared inside class called as instance variable
     float enginecap= (float)99.99;
-    String color = "green";
+    static String color = "green";
     char c= 'b';
     boolean flag =  false; //eitther takes true or false
 	//method break

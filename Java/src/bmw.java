@@ -9,7 +9,8 @@ public class bmw extends car{
 	 public static void main(String args[]) {
 		 
 		 bmw b = new bmw();
-		 System.out.println(b.color); //child class accessing parent
+		 //color is static variable decalred in parent class so can be called directly
+		 System.out.println(color); //child class accessing parent 
 		 System.out.println(b.Topspeed); //gloabl vairbles
 		 b.brake(); //accessing method
 		 b.engine();
