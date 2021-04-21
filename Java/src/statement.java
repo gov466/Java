@@ -20,7 +20,6 @@ public class statement {
 	 		System.out.println("Teeneger");
 	 	}
 	 	else if(age>20) {
-	 		System.out.println("Not teeneger");
 	 	}
 	 	else {
 	 		System.out.println("Inavlid");
