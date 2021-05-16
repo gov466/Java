@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 public class Work{ 
 	public static WebDriver driver;
-	ProperyReader obj1 = new ProperyReader(); //error here
+	propertyreader obj1 = new propertyreader(); //error reading object
 	
 	
 	@Test
@@ -21,7 +21,7 @@ public class Work{
 		String Driverpath = "C:\\Users\\Govin\\Resolve6\\chromedriver_win32\\chromedriver.exe";
 		System.setProperty("webdriver.chrome.driver", Driverpath); // set ie driver and location
 		driver = new ChromeDriver(); // driver object
-		driver.get(obj1.data);
+		driver.get(obj1.getData("url"));
 		
 		//String url="https://www.facebook.com/";
 	//	driver.get(url);

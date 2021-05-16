@@ -8,9 +8,9 @@ import java.util.Properties;
 
 import org.testng.annotations.Test;
 
-public class ProperyReader {
+public class propertyreader {
 	
-	public String data="";
+	public String data=" ";
 	
 	public String getData(String key) {
 		File src= new File("C:\\Users\\Govin\\git\\Java\\Automation\\src\\test\\resources\\seleniumdata.properties");
