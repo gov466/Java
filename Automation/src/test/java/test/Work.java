@@ -1,5 +1,7 @@
 package test;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -7,11 +9,14 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import util.Excelclass;
  
 
 public class Work{ 
 	public static WebDriver driver;
 	propertyreader obj1 = new propertyreader(); //error reading object
+	Excelclass exl= new Excelclass();
 	
 	
 	@Test
@@ -28,9 +33,13 @@ public class Work{
 		System.out.println("running Before test ");
 	}
 	//@Test(dependsOnMethods={"Run"})
-	//@Test(dataProvider="facebookdata")
-	public void login( String username, String password) {
-		System.out.println("Login");
+	@Test(dataProvider="facebookdata")
+	public void login(String username, String password ) throws IOException {
+		
+		//sending username and paswrod from excel file
+	//	String  username = excel.getExcelData(2,0);
+		//String password = excel.getExcelData(2, 1);
+		System.out.println(username+" "+password);
 		driver.findElement(By.name("email")).sendKeys(username);
 		driver.findElement(By.name("pass")).sendKeys(password);
 		
@@ -42,18 +51,26 @@ public class Work{
 //		String title = driver.getTitle();
 //		System.out.println(title);
 //	}
-	//@DataProvider(name="facebookdata")
-	public Object[][] passdata(){
-		Object[][] data = new Object[3][2];
+	@DataProvider(name="facebookdata")
+	public Object[][] passdata() throws IOException{
+		//reading values from ecxel file
 		
-		data[0][0]="random1";
-		data[0][1]="pass1";
+		exl.excel();
+		int rows= exl.getRows(1); //argument is sheet number from method in excel class
+		Object[][] data = new Object[rows][2];
 		
-		data[1][0]="random2";
-		data[1][1]="pass2";
-		
-		data[2][0]="random3";
-		data[2][1]="pass3";
+		for(int i=0;i<rows;i++) {
+			data[i][0]=exl.getExcelData(i, 0);
+			data[i][1]=exl.getExcelData(i, 1);
+		}
+//		data[0][0]="random1";
+//		data[0][1]="pass1";
+//		
+//		data[1][0]="random2";
+//		data[1][1]="pass2";
+//		
+//		data[2][0]="random3";
+//		data[2][1]="pass3";
 		return data;
 	}
 }
