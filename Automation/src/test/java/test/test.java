@@ -8,6 +8,8 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import pages.Customerservice;
+
 public class test {
 //whatever isnide QA can be run using xml file
 public static WebDriver driver;
@@ -25,6 +27,15 @@ public static WebDriver driver;
 		driver.get(url);
 		System.out.println("running Before test ");
 	}
+	@Test
+	public void verifycustomerservice() {
+		
+		Customerservice cs = new Customerservice();
+		cs.clickCustomerservice();
+		Assert.assertEquals(cs.getText()," ");
+	}
+	
+	
 	//groups for running purticular msg..like 'include' in xml
 	//when run with groups browser method will not run
 	@Test(groups= {"smoke","regression"})

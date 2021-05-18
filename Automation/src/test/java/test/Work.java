@@ -33,7 +33,7 @@ public class Work{
 		System.out.println("running Before test ");
 	}
 	//@Test(dependsOnMethods={"Run"})
-	@Test(dataProvider="facebookdata")
+	//@Test(dataProvider="facebookdata")
 	public void login(String username, String password ) throws IOException {
 		
 		//sending username and paswrod from excel file
@@ -51,7 +51,7 @@ public class Work{
 //		String title = driver.getTitle();
 //		System.out.println(title);
 //	}
-	@DataProvider(name="facebookdata")
+	/*@DataProvider(name="facebookdata")
 	public Object[][] passdata() throws IOException{
 		//reading values from ecxel file
 		
@@ -72,5 +72,5 @@ public class Work{
 //		data[2][0]="random3";
 //		data[2][1]="pass3";
 		return data;
-	}
+	}*/
 }
