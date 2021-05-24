@@ -11,5 +11,4 @@ Feature: Search page verification
     Examples:
     | text |
     |"car"|
-    |"phone"|
-    |"bat"|
+ 

@@ -1,6 +1,12 @@
 package test;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -15,7 +21,7 @@ public class test {
 public static WebDriver driver;
 	
 	@BeforeTest
-	public void browser() {
+	public void browser() throws IOException {
 		
 		System.out.println("Launching browser");
 		String Driverpath = "C:\\Users\\Govin\\Resolve6\\chromedriver_win32\\chromedriver.exe";
@@ -26,7 +32,17 @@ public static WebDriver driver;
 		String url="https://www.facebook.com/";
 		driver.get(url);
 		System.out.println("running Before test ");
+		
+		//taking screeenshot
+		TakesScreenshot s=((TakesScreenshot)driver);
+		File src=s.getScreenshotAs(OutputType.FILE);
+		String location="target/snapshot";
+		File destination= new File(location);
+		FileUtils.copyFile(src, destination); //not directly available so adding dependencies
+		
 	}
+	
+
 	@Test
 	public void verifycustomerservice() {
 		

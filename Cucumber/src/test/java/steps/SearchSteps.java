@@ -3,6 +3,7 @@ package steps;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 import AutomationEngine.Base;
 import io.cucumber.java.en.Then;
@@ -29,6 +30,11 @@ public class SearchSteps extends Base{
 		String actualvalue = e.getText();
 		System.out.println(actualvalue);
 		
+		String[] values=actualvalue.split("\"");
+		String text1= values[0];
+		String text=values[1];
+		
+		Assert.assertTrue(false);
 		
 		
 		if(actualvalue.equalsIgnoreCase(txt)) {

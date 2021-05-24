@@ -37,9 +37,10 @@ public class Amazon {
 		action.moveToElement(driver.findElement(By.xpath("//*[@id=\"icp-nav-flyout\"]"))).build().perform();
 		// driver.findElement(By.linkText("/html/body/div[1]/header/div/div[3]/div[9]/div[2]/a[9]")).click();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		WebElement log = driver.findElement(By.xpath("/html/body/div[1]/header/div/div[3]/div[10]/div[2]/a[9]"));
-		action.moveToElement(log);
-		action.click(log).build().perform();
+		driver.findElement(By.linkText("Change country/region.")).click();
+		//WebElement log = driver.findElement(By.xpath("/html/body/div[1]/header/div/div[3]/div[10]/div[2]/a[9]"));
+		//action.moveToElement(log);
+		//action.click(log).build().perform();
 		Thread.sleep(3000);
 		
 		//WebElement e = driver.findElement(By.cssSelector("//*[@id='icp-mkt-change-Ink']"));
